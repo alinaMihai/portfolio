@@ -13,6 +13,17 @@ export const projects = [
                 technologies: ['Angular', 'Angular Material', 'NodeJS', 'MongoDB', 'Protractor', 'RxJS', 'NgRx'],
                 date: 'November 2017',
             },
+            {
+                id: 2,
+                title: 'memoRe',
+                image: require('../images/memoRe.PNG'),
+                description:
+                    'Immerge yourself in quotes, lines, beautiful sayings through typing',
+                site: 'https://memo-re.herokuapp.com/login',
+                repository: 'https://github.com/CreativePower-alve/memoRe',
+                technologies: ['Angular', 'Angular Material', 'NodeJS', 'MongoDB'],
+                date: 'September 2017',
+            },
         ],
     },
 ];

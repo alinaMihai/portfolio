@@ -20,22 +20,29 @@ interface Props {
 
 const StyledProject = styled.div`
     max-width: 400px;
-    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.25);
+    min-height: 339px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
     .header,
-    .content {
+    .content,
+    .content .summary {
         display: flex;
-        align-items: center;
-    }
-    .content {
         flex-direction: column;
     }
+    .summary {
+        margin-bottom: 12px;
+        align-items: center;
+    }
     @media (min-width: 768px) {
-        .content {
+        .content .summary {
             flex-direction: row;
         }
-   }
+    }
     img {
-        width: 200px;
+        display: block;
+        max-width: 254px;
+        max-height: 213px;
+        width: auto;
+        height: auto;
         margin-right: 20px;
     }
 
@@ -102,14 +109,14 @@ const Project: FC<Props> = ({ item }) => {
                 <span className='subtitle'>{item.date}</span>
             </div>
             <div className='content'>
-                <div className='left'>
-                    <img src={item.image} alt={item.title} />
+                <div className='summary'>
+                    <div className='left'>
+                        <img src={item.image} alt={item.title} />
+                    </div>
+                    <div className='right'>
+                        <p>{item.description}</p>
+                    </div>
                 </div>
-                <div className='right'>
-                    <p>{item.description}</p>
-                </div>
-            </div>
-            <div className='footer'>
                 <ul>
                     {item.technologies.map((technology, index) => (
                         <li key={index}>
@@ -117,6 +124,8 @@ const Project: FC<Props> = ({ item }) => {
                         </li>
                     ))}
                 </ul>
+            </div>
+            <div className='footer'>
                 <div className='buttons'>
                     <LinkButton title='See website' url={item.site} />
                     <LinkButton title='See repo' url={item.repository} />
