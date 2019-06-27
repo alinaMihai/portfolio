@@ -72,12 +72,12 @@ const InfoCard = () => {
               <span className='subtitle'>London, United Kingdom</span>
            </div>
            <div className='links'>
-            <a title="Twitter" href="http://twitter.com/alinaMihai19"><FontAwesomeIcon icon={faTwitter}/></a>
-            <a title="LinkedIn" href="http://linkedin.com/in/alina-mihai-76b7b868/"><FontAwesomeIcon icon={faLinkedin}/></a>
-            <a title="Github" href="http://github.com/alinaMihai"><FontAwesomeIcon icon={faGithub}/></a>
-            <a title="FreeCodeCamp" href="https://www.freecodecamp.org/alinamihai"><FontAwesomeIcon icon={faFreeCodeCamp}/></a>
+            <a title="Twitter" target='_blank' href="http://twitter.com/alinaMihai19"><FontAwesomeIcon icon={faTwitter}/></a>
+            <a title="LinkedIn" target='_blank' href="http://linkedin.com/in/alina-mihai-76b7b868/"><FontAwesomeIcon icon={faLinkedin}/></a>
+            <a title="Github" target='_blank' href="http://github.com/alinaMihai"><FontAwesomeIcon icon={faGithub}/></a>
+            <a title="FreeCodeCamp" target='_blank' href="https://www.freecodecamp.org/alinamihai"><FontAwesomeIcon icon={faFreeCodeCamp}/></a>
            </div>
-           <a className='codeWars' href="https://www.codewars.com/users/alinaMihai">Code Wars</a>
+           <a className='codeWars' target='_blank' href="https://www.codewars.com/users/alinaMihai">Code Wars</a>
         </div>
         <div className='right'>
             <div className='description'>
