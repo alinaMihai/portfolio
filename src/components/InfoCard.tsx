@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faGithub, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
 import me from '../assets/images/me.jpg';
-import codewars from '../assets/images/codewars.png';
 
 const StyledInfoCard = styled.div`
    border-bottom: 1px solid gray;
@@ -25,6 +24,7 @@ const StyledInfoCard = styled.div`
    .left {
         background: white;
         padding: 26px;
+        text-align: center;
    }
    .title {
        font-size: 22px;
