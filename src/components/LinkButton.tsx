@@ -4,6 +4,7 @@ import styled from 'styled-components';
 interface Props {
     title: string;
     url: string;
+    target: string;
 }
 
 const StyledLinkButton = styled.a`
@@ -16,8 +17,8 @@ const StyledLinkButton = styled.a`
     }
 `;
 
-const LinkButton: FC<Props> = ({ title, url }) => {
-    return <StyledLinkButton href={url}>{title}</StyledLinkButton>;
+const LinkButton: FC<Props> = ({ title, url, target }) => {
+    return <StyledLinkButton target={target} href={url}>{title}</StyledLinkButton>;
 };
 
 export { LinkButton };

@@ -20,13 +20,19 @@ interface Props {
 
 const StyledProject = styled.div`
     max-width: 400px;
-    min-height: 339px;
+    min-height: 343px;
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
     .header,
     .content,
     .content .summary {
         display: flex;
         flex-direction: column;
+    }
+    .content {
+        flex: 1;
     }
     .summary {
         margin-bottom: 12px;
@@ -40,7 +46,7 @@ const StyledProject = styled.div`
     img {
         display: block;
         max-width: 254px;
-        max-height: 213px;
+        max-height: 150px;
         width: auto;
         height: auto;
         margin-right: 20px;
@@ -55,9 +61,10 @@ const StyledProject = styled.div`
         display: flex;
         padding: 10px;
         background: blue;
-        opacity: 0.55;
+        opacity: 0.85;
         color: wheat;
-        border-top-left-radius: 19px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
     }
     .header .title {
         flex: 1;
@@ -102,7 +109,7 @@ const Project: FC<Props> = ({ item }) => {
         <StyledProject>
             <div className='header'>
                 <span className='title'>
-                    <a href={item.site} title='see site'>
+                    <a href={item.site} title='see site' target='_blank'>
                         {item.title}
                     </a>
                 </span>
@@ -127,8 +134,8 @@ const Project: FC<Props> = ({ item }) => {
             </div>
             <div className='footer'>
                 <div className='buttons'>
-                    <LinkButton title='See website' url={item.site} />
-                    <LinkButton title='See repo' url={item.repository} />
+                    <LinkButton title='View website' url={item.site} target='_blank'/>
+                    <LinkButton title='View repo' url={item.repository} target='_blank'/>
                 </div>
             </div>
         </StyledProject>

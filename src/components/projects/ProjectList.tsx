@@ -10,8 +10,7 @@ const StyledProjectList = styled.div`
         list-style: none;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .yearProject:not(:last-child) {
@@ -21,7 +20,7 @@ const StyledProjectList = styled.div`
     @media (min-width: 1024px) {
         .yearProject:not(:last-child) {
             margin-right: 60px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
         .yearList {
             flex-direction: row;
