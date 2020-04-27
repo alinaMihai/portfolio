@@ -69,7 +69,7 @@ const InfoCard = () => {
            <div className='summary'>
               <span className='title'>Alina Mihai</span>
               <span className='subtitle'>Frontend Developer</span>
-              <span className='subtitle'>London, United Kingdom</span>
+              <span className='subtitle'>Bucharest, Romania</span>
            </div>
            <div className='links'>
             <a title="Twitter" target='_blank' href="http://twitter.com/alinaMihai19"><FontAwesomeIcon icon={faTwitter}/></a>
@@ -83,7 +83,7 @@ const InfoCard = () => {
             <div className='description'>
                 <p>Hi, I am Alina and my focus is on improving the quality of life through technology.</p>
                 <p> On this website you can find some of the projects I've been working on over the past few years.</p>
-                <p>Some of the technologies I am strong in: <strong>Javascript</strong>, <strong>Angular</strong>, <strong>AngularJS</strong>, <strong>React</strong>, <strong>React Native</strong>, <strong>HTML</strong>, <strong>CSS</strong></p>
+                <p>Some of the technologies I am strong in: <strong>Javascript</strong>, <strong>React</strong>, <strong>Angular</strong>, <strong>AngularJS</strong> , <strong>React Native</strong>, <strong>HTML</strong>, <strong>CSS</strong></p>
             </div>            
         </div>
     </StyledInfoCard>
