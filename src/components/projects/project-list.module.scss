@@ -1,0 +1,26 @@
+.StyledProjectList {
+    padding: 26px;
+}
+
+.yearList {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.yearProject:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+@media (min-width: 1024px) {
+    .yearProject:not(:last-child) {
+        margin-right: 60px;
+        margin-bottom: 30px;
+    }
+
+    .yearList {
+        flex-direction: row;
+    }
+}

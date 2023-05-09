@@ -1,21 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import styles from './header.module.scss';
 
-const StyledHeader = styled.header`
-   display:flex;
-   background-color: black;
-   height: 60px;
-   color: white;
-   align-items: center;
-   span{
-       margin-left: 10px;
-       font-size: 18px;
-       font-weight: bold;
-   }
-`;
+
 
 const Header = () => (
-    <StyledHeader><span>Portfolio</span></StyledHeader>
+    <div className={styles.StyledHeader}><span>Portfolio</span></div>
 );
 
-export {Header};
+export { Header };

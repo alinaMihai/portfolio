@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
+import styles from './link-button.module.scss';
 
 interface Props {
     title: string;
@@ -7,18 +7,9 @@ interface Props {
     target: string;
 }
 
-const StyledLinkButton = styled.a`
-    text-decoration: none;
-    color: blue;
-    padding: 4px;
-    text-align: center;
-    &:hover {
-        color: darkblue;
-    }
-`;
 
 const LinkButton: FC<Props> = ({ title, url, target }) => {
-    return <StyledLinkButton target={target} href={url}>{title}</StyledLinkButton>;
+    return <a className={styles.StyledLinkButton} target={target} href={url} rel="noopener noreferrer">{title}</a>;
 };
 
 export { LinkButton };

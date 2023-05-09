@@ -1,0 +1,13 @@
+.StyledFooter {
+    display: flex;
+    background-color: black;
+    height: 60px;
+    color: white;
+    align-items: center;
+
+    span {
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

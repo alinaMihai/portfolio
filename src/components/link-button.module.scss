@@ -1,0 +1,10 @@
+.StyledLinkButton {
+    text-decoration: none;
+    color: blue;
+    padding: 4px;
+    text-align: center;
+
+    &:hover {
+        color: darkblue;
+    }
+}

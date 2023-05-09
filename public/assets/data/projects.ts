@@ -5,7 +5,7 @@ export const projects = [
             {
                 id: 1,
                 title: 'Wakeup Call v2',
-                image: require('../images/wakeup.PNG'),
+                image: '/images/wakeup.PNG',
                 description:
                     'The purpose of the application is to encourage you to ask yourself questions, that will help you become more mindful of your experiences, thoughts, feelings, emotions.',
                 site: 'https://wakeup-call-app.herokuapp.com',
@@ -16,7 +16,7 @@ export const projects = [
             {
                 id: 2,
                 title: 'memoRe',
-                image: require('../images/memoRe.PNG'),
+                image: '/images/memoRe.PNG',
                 description: 'Immerge yourself in quotes, lines, beautiful sayings through typing',
                 site: 'https://memo-re.herokuapp.com/login',
                 repository: 'https://github.com/CreativePower-alve/memoRe',
@@ -31,7 +31,7 @@ export const projects = [
             {
                 id: 3,
                 title: 'Wakeup Call v1',
-                image: require('../images/wakeup-v1.PNG'),
+                image: '/images/wakeup-v1.PNG',
                 description:
                     'First version of the Wakeup call app whose purpose is to encourage you to ask yourself questions, that will help you become more mindful of your experiences, thoughts, feelings, emotions.',
                 site: 'https://wakeupcall-app.herokuapp.com',
@@ -47,7 +47,7 @@ export const projects = [
             {
                 id: 4,
                 title: 'PInterest Clone',
-                image: require('../images/pInterest.PNG'),
+                image: '/images/pInterest.PNG',
                 description:
                     'Link to images, see a pInterest style wall of images linked to by all users',
                 site: 'http://p-interest-clone-fcc.herokuapp.com/',
@@ -58,7 +58,7 @@ export const projects = [
             {
                 id: 5,
                 title: 'BookClub App',
-                image: require('../images/bookclub.PNG'),
+                image: '/images/bookclub.PNG',
                 description:
                     'Add and trade books with others',
                 site: 'https://bookclub-fcc.herokuapp.com/',
@@ -69,7 +69,7 @@ export const projects = [
             {
                 id: 6,
                 title: 'Stockchart',
-                image: require('../images/stocks.PNG'),
+                image: '/images/stocks.PNG',
                 description:
                     'Enter stock symbols and view graphical representation of their current trend lines',
                 site: 'http://stockchart-fccc.herokuapp.com/',
@@ -80,7 +80,7 @@ export const projects = [
             {
                 id: 7,
                 title: 'Nightlife Coordinator',
-                image: require('../images/nightlife.PNG'),
+                image: '/images/nightlife.PNG',
                 description:
                     'View all bars open in your area and indicate you`re going there tonight',
                 site: 'http://nightlife-coordinator.herokuapp.com/',
@@ -91,7 +91,7 @@ export const projects = [
             {
                 id: 8,
                 title: 'Voting App',
-                image: require('../images/voting.PNG'),
+                image: '/images/voting.PNG',
                 description:
                     'Create, take and share polls with the community',
                 site: 'https://voting-app-a.herokuapp.com/',
@@ -102,7 +102,7 @@ export const projects = [
             {
                 id: 9,
                 title: 'Simon`s Game',
-                image: require('../images/simon.PNG'),
+                image: '/images/simon.PNG',
                 description:
                     'Play a simple Simon`s game',
                 site: 'http://codepen.io/alinaMihai/full/vNbEKV/',
@@ -113,7 +113,7 @@ export const projects = [
             {
                 id: 10,
                 title: 'Tic Tac Toe Game',
-                image: require('../images/tictac.PNG'),
+                image: '/images/tictac.PNG',
                 description:
                     'Play an unbeatable game of Tic Tac Toe with the computer',
                 site: 'http://codepen.io/alinaMihai/full/BoqMPP/',
@@ -124,7 +124,7 @@ export const projects = [
             {
                 id: 11,
                 title: 'Wikipedia Viewer',
-                image: require('../images/wikipedia-viewer.PNG'),
+                image: '/images/wikipedia-viewer.PNG',
                 description:
                     'Search Wikipedia entries in a search box and see results',
                 site: 'http://codepen.io/alinaMihai/full/vNzWrw/',
@@ -135,7 +135,7 @@ export const projects = [
             {
                 id: 12,
                 title: 'Camper News Reader',
-                image: require('../images/news.PNG'),
+                image: '/images/news.PNG',
                 description:
                     'Browse recent posts from FreecodeCamp Camper News',
                 site: 'https://codepen.io/alinaMihai/full/XmPWQP/',
@@ -146,7 +146,7 @@ export const projects = [
             {
                 id: 13,
                 title: 'TwitchTv Streams',
-                image: require('../images/twitch.PNG'),
+                image: '/images/twitch.PNG',
                 description:
                     'Create interface to see status of popular streams on Twitch.tv',
                 site: 'http://codepen.io/alinaMihai/full/KdBQEz/',
@@ -157,7 +157,7 @@ export const projects = [
             {
                 id: 14,
                 title: 'Local Weather App',
-                image: require('../images/weather.PNG'),
+                image: '/images/weather.PNG',
                 description:
                     'Show weather information based on location',
                 site: 'http://codepen.io/alinaMihai/full/rOrxKB/',
@@ -168,7 +168,7 @@ export const projects = [
             {
                 id: 15,
                 title: 'Javascript Calculator',
-                image: require('../images/calculator.PNG'),
+                image: '/images/calculator.PNG',
                 description:
                     'Make a javascript calculator with an interface',
                 site: 'http://codepen.io/alinaMihai/full/VvxJeo/',
@@ -179,7 +179,7 @@ export const projects = [
             {
                 id: 16,
                 title: 'Pomodoro Timer',
-                image: require('../images/pomodoro.PNG'),
+                image: '/images/pomodoro.PNG',
                 description:
                     'Create a pomodoro timer with adjustable settings and alarm sound',
                 site: 'http://codepen.io/alinaMihai/full/VvXxKr/',
@@ -190,7 +190,7 @@ export const projects = [
             {
                 id: 17,
                 title: 'Random Quotes Machine',
-                image: require('../images/quote.PNG'),
+                image: '/images/quote.PNG',
                 description:
                     'Generate random quotes and tweet them',
                 site: 'http://codepen.io/alinaMihai/full/yYvdzw/',
