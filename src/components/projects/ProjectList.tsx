@@ -1,30 +1,38 @@
 import React from 'react';
 import { Project, iProject } from './Project';
-import { projects } from '../../../public/assets/data/projects';
+import groupby from 'lodash-es/groupBy';
 import styles from './project-list.module.scss';
+import { getAllProjects } from '@/utils/contentful';
 
 
-const ProjectList = () => {
-    function getListOfProjectPerYear(year: string, yearProjects: iProject[]) {
-        return (
-            <div key={year}>
-                <h4>Year: {year}</h4>
-                <ul className={styles.yearList} key={year}>
-                    {yearProjects.map((project) => (
-                        <li className={styles.yearProject} key={project.id}>
-                            <Project item={project} />
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        );
+const ProjectList = async () => {
+    const projects = await getAllProjects();
+
+    function getListOfProjectPerYear(projects: iProject[]) {
+        const projectsByYear = groupby(projects, 'year');
+        return Object.entries(projectsByYear).sort(([year1,], [year2,]) => {
+            return Number(year2) - Number(year1);
+        }).map(([year, listProjects]) => {
+            return (
+                <div key={year}>
+                    <h4>Year: {year}</h4>
+                    <ul className={styles.yearList} key={year}>
+                        {listProjects.map((project) => (
+                            <li className={styles.yearProject} key={project.title}>
+                                <Project item={project} />
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )
+        })
     }
     return (
         <div className={styles.StyledProjectList}>
             <h1>List of Projects</h1>
-            {projects.map((yearProjects) => getListOfProjectPerYear(yearProjects.year, yearProjects.projects))}
+            {getListOfProjectPerYear(projects)}
         </div>
     );
 };
 
-export { ProjectList };
+export default ProjectList;

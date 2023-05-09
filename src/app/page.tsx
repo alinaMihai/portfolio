@@ -1,9 +1,9 @@
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import React, { FC } from 'react';
+import React, { FC, Suspense } from 'react';
 import { Banner } from '../components/Banner';
 import { InfoCard } from '../components/InfoCard';
-import { ProjectList } from '../components/projects/ProjectList';
+import ProjectList from '../components/projects/ProjectList';
 
 const Home: FC<object> = () => {
     return (
@@ -11,8 +11,9 @@ const Home: FC<object> = () => {
             <Header />
             <Banner />
             <InfoCard />
-
-            <ProjectList />
+            <Suspense fallback={<div>Loading ...</div>}>
+                <ProjectList />
+            </Suspense>
             <Footer />
             <div>
 

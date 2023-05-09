@@ -5,9 +5,11 @@ import { LinkButton } from '../LinkButton';
 import styles from './project.module.scss';
 
 export interface iProject {
-    id: number;
     title: string;
-    image: any;
+    image: {
+        url: string;
+
+    };
     description: string;
     site: string;
     repository: string;
@@ -21,6 +23,7 @@ interface Props {
 
 
 const Project: FC<Props> = ({ item }) => {
+    const date = new Date(item.date);
     return (
         <div className={styles.StyledProject}>
             <div className={styles.header}>
@@ -29,12 +32,12 @@ const Project: FC<Props> = ({ item }) => {
                         {item.title}
                     </a>
                 </span>
-                <span className={styles.subtitle}>{item.date}</span>
+                <span className={styles.subtitle}>{date.getMonth()}/{date.getFullYear()}</span>
             </div>
             <div className={styles.content}>
                 <div className={styles.summary}>
                     <div className={styles.left}>
-                        <Image src={item.image} alt={item.title} width={500} height={500} />
+                        <Image src={item.image.url} alt={item.title} width={500} height={500} />
                     </div>
                     <div className={styles.right}>
                         <p>{item.description}</p>
