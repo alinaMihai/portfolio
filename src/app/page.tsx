@@ -12,6 +12,7 @@ const Home: FC<object> = () => {
             <Banner />
             <InfoCard />
             <Suspense fallback={<div>Loading ...</div>}>
+                {/* @ts-expect-error Server Component */}
                 <ProjectList />
             </Suspense>
             <Footer />
