@@ -36,9 +36,10 @@ const Project: FC<Props> = ({ item }) => {
             </div>
             <div className={styles.content}>
                 <div className={styles.summary}>
-                    <div className={styles.left}>
+                    {item.image && <div className={styles.left}>
                         <Image src={item.image.url} alt={item.title} width={500} height={500} />
                     </div>
+                    }
                     <div className={styles.right}>
                         <p>{item.description}</p>
                     </div>
