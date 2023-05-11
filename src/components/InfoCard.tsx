@@ -21,13 +21,21 @@ const InfoCard = () => {
                 <a title="Github" target='_blank' rel="noopener noreferrer" href="http://github.com/alinaMihai"><FontAwesomeIcon icon={faGithub} /></a>
                 <a title="FreeCodeCamp" target='_blank' rel="noopener noreferrer" href="https://www.freecodecamp.org/alinamihai"><FontAwesomeIcon icon={faFreeCodeCamp} /></a>
             </div>
-            <a className={styles.codeWars} target='_blank' rel="noopener noreferrer" href="https://www.codewars.com/users/alinaMihai">Code Wars</a>
         </div>
         <div className={styles.right}>
             <div className={styles.description}>
-                <p>Hi, I am Alina and my focus is on improving the quality of life through technology.</p>
-                <p> On this website you can find some of the projects I've been working on over the past few years.</p>
-                <p>Some of the technologies I am strong in: <strong>Javascript</strong>, <strong>React</strong>, <strong>Angular</strong>, <strong>AngularJS</strong> , <strong>React Native</strong>, <strong>HTML</strong>, <strong>CSS</strong></p>
+                <p>Hi, welcome to my portfolio website!
+                </p>
+                <p>Here you can find an overview of my personal projects using a variety of technologies I've worked with over the years.
+                </p>
+                <p> Profesionally my primary focus has been on Frontend Technologies, I also have some good knowledge of Backend and DevOps.
+                </p>
+                <p>I have more than 5 years of working experience mostly as an IT Consultant for various companies and clients.
+                </p><p>I am most experienced in <strong>Javascript</strong>, <strong>React</strong>, <strong>Nextjs</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>GraphQL</strong>, <strong>Storybook</strong>, <strong>React Testing Library</strong>, and <strong>Contentstack CMS</strong></p>
+                <p>
+                    When I am not learning new technologies and programming, some of the topics that interest me include Climate Change, Coaching and Personal Wellbeing. 
+                </p>
+                <p>If you are interested in a collaboration, I'd love to get in touch!</p>
             </div>
         </div>
     </div>

@@ -45,22 +45,15 @@
     margin-top: 10px;
 }
 
-.links svg,
-.codeWars {
-    font-size: 24px;
+.links svg {
+    height: 24px;
     padding: 9px;
     color: blue;
     opacity: 0.7;
 }
 
-.links svg:hover,
-.codeWars:hover {
+.links svg:hover {
     opacity: 1;
-}
-
-.codeWars {
-    text-decoration: none;
-    font-size: 14px;
 }
 
 .right {
