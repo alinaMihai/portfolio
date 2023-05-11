@@ -33,7 +33,7 @@ const InfoCard = () => {
                 <p>I have more than 5 years of working experience mostly as an IT Consultant for various companies and clients.
                 </p><p>I am most experienced in <strong>Javascript</strong>, <strong>React</strong>, <strong>Nextjs</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>GraphQL</strong>, <strong>Storybook</strong>, <strong>React Testing Library</strong>, and <strong>Contentstack CMS</strong></p>
                 <p>
-                    When I am not learning new technologies and programming, some of the topics that interest me include Climate Change, Coaching and Personal Wellbeing. 
+                    When I am not learning new technologies and programming, some of the topics that interest me include Climate Change, Coaching, and Personal well-being.
                 </p>
                 <p>If you are interested in a collaboration, I'd love to get in touch!</p>
             </div>
