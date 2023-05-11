@@ -14,16 +14,14 @@ const ProjectList = async () => {
             return Number(year2) - Number(year1);
         }).map(([year, listProjects]) => {
             return (
-                <div key={year}>
+                <section key={year}>
                     <h4>Year: {year}</h4>
                     <ul className={styles.yearList} key={year}>
                         {listProjects.map((project) => (
-                            <li className={styles.yearProject} key={project.title}>
-                                <Project item={project} />
-                            </li>
+                            <Project item={project} key={project.title} />
                         ))}
                     </ul>
-                </div>
+                </section>
             )
         })
     }
